@@ -1,0 +1,1 @@
+﻿{"IntProperty":111,"DecimalProperty":222.22,"StringProperty":"s : t , r i n g","FProperty":[{"i1":1,"i2":2,"i3":3,"i4":4,"i5":5},{"i1":5,"i2":4,"i3":3,"i4":2,"i5":1}]}
