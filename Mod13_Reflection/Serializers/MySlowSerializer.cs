@@ -53,23 +53,6 @@ internal class MySlowSerializer : ISerializer
         return t;
     }
 
-    private static T Convert<T>(string input)
-    {
-        try
-        {
-            var converter = TypeDescriptor.GetConverter(typeof(T));
-            if (converter != null)
-            {
-                // Cast ConvertFromString(string text) : object to (T)
-                return (T)converter.ConvertFromString(input);
-            }
-            return default(T);
-        }
-        catch (NotSupportedException)
-        {
-            return default(T);
-        }
-    }
     private Dictionary<string, string> CreatePropValueDict(string[] propValueArray)
     {
         Dictionary<string, string> dict = new();
